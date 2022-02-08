@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --no-minify --public-url /js-menu/",
+    "build": "parcel build src/index.html --no-minify --public-url /timer/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
@@ -16,9 +16,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maasiimka/js-menu/issues"
+    "url": "https://github.com/maasiimka/timer/issues"
   },
-  "homepage": "https://maasiimka.github.io/js-menu",
+  "homepage": "https://maasiimka.github.io/timer",
   "devDependencies": {
     "parcel": "^2.2.1"
   },
