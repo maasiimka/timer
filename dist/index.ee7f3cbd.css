@@ -1,0 +1,145 @@
+/* .form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 32px;
+}
+
+.form > input {
+    font-size: 15px;
+    margin-bottom: 10px;
+    height: 30px;
+    border-color: transparent;
+    border-bottom: 1px solid #000;
+}
+
+.btn{
+    font-size: 19px;
+    height: 40px;
+    width: 120px;
+    margin: auto;
+    border: transparent;
+    background-color: rgb(73, 170, 94);
+} */
+
+/* .container {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+    border-radius: 10px;
+
+}
+
+.contain {
+    padding: 5px;
+    margin-left: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}*/
+
+.nav {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  width: 700px;
+  justify-content: space-around;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+  width: fit-content;
+  color: #008000;
+  background-color: #fff;
+  border: #008000 solid 2px;
+}
+
+.valid-date {
+  margin-left: 10px;
+}
+
+.result {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+  width: fit-content;
+  color: rgb(255, 255, 255);
+}
+
+.btn {
+  padding: 15px 25px;
+  text-decoration: none;
+  color: rgb(59, 132, 201);
+  background-color: rgb(238, 234, 234);
+  border: rgb(59, 132, 201) solid 2px;
+  border-radius: 5px;
+  box-shadow: 4px 4px black;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px black;
+}
+
+.timer {
+  border: rgb(201, 59, 194) solid 3px;
+  background-color: rgb(238, 234, 234);
+  border-radius: 5px;
+  width: 50px;
+  padding: 15px 10px;
+  box-shadow: 4px 4px black;
+}
+
+.timer::placeholder {
+  width: 280px;
+}
+
+/* .inverted{
+    color: rgb(238, 234, 234);
+    background-color: rgb(201, 59, 194);
+    border-color: rgb(201, 59, 194);
+}  */
+
+/* .list{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.item{
+    margin: 0;
+    padding: 0;
+}
+
+.item > img {
+    width: 700px;
+} */
+
+/* #validation-input {
+    border: 3px solid #bdbdbd;
+  }
+  
+  #validation-input.valid {
+    border-color: #4caf50;
+  }
+  
+  #validation-input.invalid {
+    border-color: #f44336;
+  } */
+
+/*# sourceMappingURL=index.ee7f3cbd.css.map */
