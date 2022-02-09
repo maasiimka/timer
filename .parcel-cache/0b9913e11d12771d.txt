@@ -1,11 +1,10 @@
-13849
+13845
 60/home/maroz/Dev/Learn/JS/js training/dist/index.ee7f3cbd.css1644361846176188662 0
 64/home/maroz/Dev/Learn/JS/js training/dist/index.ee7f3cbd.css.map1644361846180188742 0
-52/home/maroz/Dev/Learn/JS/js training/dist/index.html1644395144080383114 0
-63/home/maroz/Dev/Learn/JS/js training/dist/index.8e327535.js.map1644395144108383638 0
-41/home/maroz/Dev/Learn/JS/js training/dist1644395144108383638 1
-52/home/maroz/Dev/Learn/JS/js training/src/01-first.js1644395136340238515 0
-50/home/maroz/Dev/Learn/JS/js training/src/style.css1644395134272199887 0
+52/home/maroz/Dev/Learn/JS/js training/dist/index.html1644361740518112971 0
+41/home/maroz/Dev/Learn/JS/js training/dist1644392513348047521 1
+52/home/maroz/Dev/Learn/JS/js training/src/01-first.js1644363026521569217 0
+50/home/maroz/Dev/Learn/JS/js training/src/style.css1644362980246000000 0
 74/home/maroz/Dev/Learn/JS/js training/node_modules/pinkie-promise/readme.md1644361924661767714 0
 73/home/maroz/Dev/Learn/JS/js training/node_modules/pinkie-promise/index.js1644361924657767633 0
 72/home/maroz/Dev/Learn/JS/js training/node_modules/pinkie-promise/license1644361924661767714 0
@@ -1881,7 +1880,6 @@
 73/home/maroz/Dev/Learn/JS/js training/node_modules/core-js/es/set/index.js1644361675888876590 0
 70/home/maroz/Dev/Learn/JS/js training/node_modules/csso/lib/compress.js1644361675276865017 0
 79/home/maroz/Dev/Learn/JS/js training/node_modules/core-js/es/symbol/iterator.js1644361675912877044 0
-60/home/maroz/Dev/Learn/JS/js training/dist/index.2cdaf7bc.css1644395144092383339 0
 81/home/maroz/Dev/Learn/JS/js training/node_modules/css-tree/lib/lexer/structure.js1644361675588870917 0
 83/home/maroz/Dev/Learn/JS/js training/node_modules/core-js/es/symbol/has-instance.js1644361675876876363 0
 82/home/maroz/Dev/Learn/JS/js training/node_modules/core-js/es/symbol/description.js1644361675672872505 0
@@ -8658,7 +8656,7 @@
 81/home/maroz/Dev/Learn/JS/js training/node_modules/@parcel/transformer-postcss/lib1644361674916858210 1
 71/home/maroz/Dev/Learn/JS/js training/node_modules/node-forge/lib/rsa.js1644361675492869102 0
 73/home/maroz/Dev/Learn/JS/js training/node_modules/es-abstract/2021/Set.js1644361675800874926 0
-51/home/maroz/Dev/Learn/JS/js training/src/index.html1644395132204161260 0
+51/home/maroz/Dev/Learn/JS/js training/src/index.html1644363054950202017 0
 83/home/maroz/Dev/Learn/JS/js training/node_modules/core-js/modules/es.regexp.test.js1644361675748873942 0
 89/home/maroz/Dev/Learn/JS/js training/node_modules/core-js/es/string/virtual/trim-start.js1644361676024879162 0
 88/home/maroz/Dev/Learn/JS/js training/node_modules/@parcel/core/src/public/BundleGraph.js1644361675452868345 0
@@ -10476,7 +10474,6 @@
 84/home/maroz/Dev/Learn/JS/js training/node_modules/node-addon-api/tools/check-napi.js1644361675228864109 0
 76/home/maroz/Dev/Learn/JS/js training/node_modules/node-addon-api/except.gypi1644361674656853295 0
 77/home/maroz/Dev/Learn/JS/js training/node_modules/node-addon-api/CHANGELOG.md1644361675320865849 0
-64/home/maroz/Dev/Learn/JS/js training/dist/index.2cdaf7bc.css.map1644395144092383339 0
 67/home/maroz/Dev/Learn/JS/js training/node_modules/is-json/README.md1644361674580851858 0
 77/home/maroz/Dev/Learn/JS/js training/node_modules/node-addon-api/package.json1644361675288865244 0
 74/home/maroz/Dev/Learn/JS/js training/node_modules/es-abstract/2016/Call.js1644361675512869480 0
@@ -11066,7 +11063,6 @@
 81/home/maroz/Dev/Learn/JS/js training/node_modules/es-abstract/helpers/isFinite.js1644361675708873186 0
 76/home/maroz/Dev/Learn/JS/js training/node_modules/es-abstract/helpers/mod.js1644361675756874094 0
 84/home/maroz/Dev/Learn/JS/js training/node_modules/es-abstract/helpers/isPrimitive.js1644361675716873338 0
-59/home/maroz/Dev/Learn/JS/js training/dist/index.8e327535.js1644395144104383563 0
 83/home/maroz/Dev/Learn/JS/js training/node_modules/caniuse-lite/data/features/ttf.js1644361675812875153 0
 93/home/maroz/Dev/Learn/JS/js training/node_modules/es-abstract/helpers/getSymbolDescription.js1644361675668872430 0
 89/home/maroz/Dev/Learn/JS/js training/node_modules/@babel/generator/lib/node/whitespace.js1644361675256864639 0
