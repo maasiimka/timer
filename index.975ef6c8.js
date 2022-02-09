@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"9ILlO":[function(require,module,exports) {
+})({"7nZVA":[function(require,module,exports) {
 "use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "016977de8e327535";
+module.bundle.HMR_BUNDLE_ID = "890e741a975ef6c8";
 function _toConsumableArray(arr) {
     return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
 }
@@ -518,8 +518,34 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"aMdwd":[function(require,module,exports) {
+},{}],"8lqZg":[function(require,module,exports) {
 var _styleCss = require("./style.css");
+var _consts = require("./js/consts");
+var _startOrStopExample = require("./js/startOrStopExample");
+setInterval(()=>{
+    let date = new Date();
+    _consts.validDate.textContent = date.toLocaleString("Uk-uk", _consts.options);
+}, 2000);
+_consts.start.addEventListener("click", _startOrStopExample.createTimer);
+_consts.stop.addEventListener("click", _startOrStopExample.stopTimer);
+
+},{"./style.css":"bhJkM","./js/consts":"2J0f1","./js/startOrStopExample":"dHNE7"}],"bhJkM":[function() {},{}],"2J0f1":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "start", ()=>start
+);
+parcelHelpers.export(exports, "stop", ()=>stop
+);
+parcelHelpers.export(exports, "input", ()=>input
+);
+parcelHelpers.export(exports, "timer", ()=>timer
+);
+parcelHelpers.export(exports, "validDate", ()=>validDate
+);
+parcelHelpers.export(exports, "resultOfValidation", ()=>resultOfValidation
+);
+parcelHelpers.export(exports, "options", ()=>options
+);
 const start = document.querySelector(".js-start");
 const stop = document.querySelector(".js-stop");
 const input = document.querySelectorAll(".js-date");
@@ -535,14 +561,75 @@ const options = {
     minute: "2-digit",
     second: "2-digit"
 };
-let isWorking = false;
-setInterval(()=>{
-    let date = new Date();
-    validDate.textContent = date.toLocaleString("Uk-uk", options);
-}, 2000);
-const pad = (value)=>{
-    return String(value).padStart(2, "0");
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
 };
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"dHNE7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isWorking", ()=>isWorking
+);
+parcelHelpers.export(exports, "createTimer", ()=>createTimer
+);
+parcelHelpers.export(exports, "stopTimer", ()=>stopTimer
+);
+var _consts = require("./consts");
+var _class = require("./class");
+let isWorking = false;
+let timer2 = null;
+const createTimer = ()=>{
+    if (isWorking) return;
+    isWorking = true;
+    const arrOfValues = [
+        ..._consts.input
+    ].map((el)=>Number(el.value.trim())
+    );
+    const futureTime = new Date(2022, 1, ...arrOfValues);
+    const timer1 = new _class.CountdownTimer(futureTime);
+    timer1.showResultTime();
+    timer2 = timer1;
+};
+const stopTimer = ()=>{
+    isWorking = false;
+    clearInterval(timer2.intervalId);
+};
+
+},{"./consts":"2J0f1","./class":"18oVa","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"18oVa":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CountdownTimer", ()=>CountdownTimer
+);
+var _consts = require("./consts");
+var _pad = require("./pad");
+var _startOrStopExample = require("./startOrStopExample");
 class CountdownTimer {
     constructor(currentTime = {
     }){
@@ -552,37 +639,30 @@ class CountdownTimer {
         this.unixTime = this.time.getTime();
     }
     validateTime() {
-        resultOfValidation.textContent = "!!! Час не валідний, cпробуйте ввести інший !!!";
-        resultOfValidation.style.backgroundColor = "#ff0000";
-        stopTimer();
+        _consts.resultOfValidation.textContent = "!!! Час не валідний, cпробуйте ввести інший !!!";
+        _consts.resultOfValidation.style.backgroundColor = "#ff0000";
+        _startOrStopExample.stopTimer();
     }
     isTimerEnded() {
-        resultOfValidation.textContent = "Таймер закінчив роботу. Надсилаємо нагадування ;)";
-        resultOfValidation.style.backgroundColor = "#008000";
-        stopTimer();
+        _consts.resultOfValidation.textContent = "Таймер закінчив роботу. Надсилаємо нагадування ;)";
+        _consts.resultOfValidation.style.backgroundColor = "#008000";
+        _startOrStopExample.stopTimer();
     }
     formatResultTime(resultTime) {
         this.resultDays = Math.floor(resultTime / 86400000);
-        this.resultHours = pad(Math.floor(resultTime % 86400000 / 3600000));
-        this.resulMins = pad(Math.floor(resultTime % 3600000 / 60000));
-        this.resultSecs = pad(Math.floor(resultTime % 60000 / 1000));
+        this.resultHours = _pad.pad(Math.floor(resultTime % 86400000 / 3600000));
+        this.resulMins = _pad.pad(Math.floor(resultTime % 3600000 / 60000));
+        this.resultSecs = _pad.pad(Math.floor(resultTime % 60000 / 1000));
         const { resultDays , resultHours , resulMins , resultSecs  } = this;
-        timer.textContent = `${resultDays}:${resultHours}:${resulMins}:${resultSecs}`;
-    }
-    showResultTime() {
-        this.currentTime = null;
-        this.intervalId = setInterval(()=>{
-            this.currentTime = Date.now();
-            this.substractTime();
-        }, 1000);
+        _consts.timer.textContent = `${resultDays}:${resultHours}:${resulMins}:${resultSecs}`;
     }
     substractTime() {
         this.getUnixTime();
         this.resultTime = this.unixTime - this.currentTime;
         const { resultTime  } = this;
-        resultOfValidation.textContent = "";
-        resultOfValidation.style.backgroundColor = "#ffffff";
-        if (resultTime < -1000) {
+        _consts.resultOfValidation.textContent = "";
+        _consts.resultOfValidation.style.backgroundColor = "#ffffff";
+        if (resultTime < -1000 || !resultTime) {
             this.validateTime();
             return;
         } else if (resultTime < 0 && resultTime > -1000) {
@@ -591,28 +671,24 @@ class CountdownTimer {
         }
         this.formatResultTime(resultTime);
     }
+    showResultTime() {
+        this.currentTime = null;
+        this.intervalId = setInterval(()=>{
+            this.currentTime = Date.now();
+            this.substractTime();
+        }, 1000);
+    }
 }
-let timer2 = null;
-const createTimer = ()=>{
-    if (isWorking) return;
-    isWorking = true;
-    const arrOfInputs = [
-        ...input
-    ];
-    const arrOfValues = arrOfInputs.map((el)=>Number(el.value.trim())
-    );
-    const futureTime = new Date(2022, 1, ...arrOfValues);
-    const timer1 = new CountdownTimer(futureTime);
-    timer1.showResultTime();
-    timer2 = timer1;
-};
-const stopTimer = ()=>{
-    isWorking = false;
-    clearInterval(timer2.intervalId);
-};
-start.addEventListener("click", createTimer);
-stop.addEventListener("click", stopTimer);
 
-},{"./style.css":"bhJkM"}],"bhJkM":[function() {},{}]},["9ILlO","aMdwd"], "aMdwd", "parcelRequire03f7")
+},{"./consts":"2J0f1","./pad":"fDlWr","./startOrStopExample":"dHNE7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fDlWr":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "pad", ()=>pad
+);
+const pad = (value)=>{
+    return String(value).padStart(2, "0");
+};
 
-//# sourceMappingURL=index.8e327535.js.map
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7nZVA","8lqZg"], "8lqZg", "parcelRequire03f7")
+
+//# sourceMappingURL=index.975ef6c8.js.map
